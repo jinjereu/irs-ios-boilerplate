@@ -8,4 +8,5 @@ target 'ios-boilerplate' do
 
   # Pods for ios-boilerplate
   pod 'Alamofire', '~> 4.7'
+  pod 'SwiftLint'
 end
