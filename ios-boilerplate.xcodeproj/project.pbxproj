@@ -12,6 +12,7 @@
 		1CC3858B219BBCAC00F831EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC38589219BBCAC00F831EF /* Main.storyboard */; };
 		1CC3858D219BBCB000F831EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC3858C219BBCB000F831EF /* Assets.xcassets */; };
 		1CC38590219BBCB000F831EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC3858E219BBCB000F831EF /* LaunchScreen.storyboard */; };
+		1CC385A9219CD27800F831EF /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1CC385A8219CD27800F831EF /* .swiftlint.yml */; };
 		E9DC57601F07EDDED3AE2E13 /* Pods_ios_boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3033D201BD9629454D06E4C9 /* Pods_ios_boilerplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		1CC3858C219BBCB000F831EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CC3858F219BBCB000F831EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CC38591219BBCB000F831EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC385A8219CD27800F831EF /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		1DA5C76EF046CE7E762BF0D4 /* Pods-ios-boilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-boilerplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-boilerplate/Pods-ios-boilerplate.debug.xcconfig"; sourceTree = "<group>"; };
 		3033D201BD9629454D06E4C9 /* Pods_ios_boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,10 +53,11 @@
 		1CC38579219BBCAC00F831EF = {
 			isa = PBXGroup;
 			children = (
+				1CC385A8219CD27800F831EF /* .swiftlint.yml */,
 				1CC38584219BBCAC00F831EF /* ios-boilerplate */,
-				1CC38598219BC7A800F831EF /* Support Files */,
-				1CC38597219BC7A300F831EF /* Libraries */,
-				1CC38599219BC7AE00F831EF /* Templates */,
+				1CC385A1219CCF8F00F831EF /* Libraries */,
+				1CC385A3219CCF8F00F831EF /* Support Files */,
+				1CC385A2219CCF8F00F831EF /* Templates */,
 				1CC38583219BBCAC00F831EF /* Products */,
 				BFC502F674B30210F146A81B /* Pods */,
 				00B4A176EDF874970906DE25 /* Frameworks */,
@@ -80,27 +83,6 @@
 				1CC38591219BBCB000F831EF /* Info.plist */,
 			);
 			path = "ios-boilerplate";
-			sourceTree = "<group>";
-		};
-		1CC38597219BC7A300F831EF /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		1CC38598219BC7A800F831EF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Support Files";
-			sourceTree = "<group>";
-		};
-		1CC38599219BC7AE00F831EF /* Templates */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Templates;
 			sourceTree = "<group>";
 		};
 		1CC3859A219BCB4800F831EF /* Application */ = {
@@ -130,13 +112,34 @@
 		1CC3859E219BCCA100F831EF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1CC385AA219CD53E00F831EF /* Entities */,
 				1CC38589219BBCAC00F831EF /* Main.storyboard */,
-				1CC3859F219BCCE100F831EF /* Entities */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		1CC3859F219BCCE100F831EF /* Entities */ = {
+		1CC385A1219CCF8F00F831EF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		1CC385A2219CCF8F00F831EF /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		1CC385A3219CCF8F00F831EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		1CC385AA219CD53E00F831EF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -164,6 +167,7 @@
 				1CC3857F219BBCAC00F831EF /* Frameworks */,
 				1CC38580219BBCAC00F831EF /* Resources */,
 				43F4F5F27B18245E7F03F2F2 /* [CP] Embed Pods Frameworks */,
+				1CC385A5219CD0BB00F831EF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -212,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC385A9219CD27800F831EF /* .swiftlint.yml in Resources */,
 				1CC38590219BBCB000F831EF /* LaunchScreen.storyboard in Resources */,
 				1CC3858D219BBCB000F831EF /* Assets.xcassets in Resources */,
 				1CC3858B219BBCAC00F831EF /* Main.storyboard in Resources */,
@@ -221,6 +226,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1CC385A5219CD0BB00F831EF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		43F4F5F27B18245E7F03F2F2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
