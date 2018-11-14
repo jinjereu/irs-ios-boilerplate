@@ -72,9 +72,9 @@
 		1CC38584219BBCAC00F831EF /* ios-boilerplate */ = {
 			isa = PBXGroup;
 			children = (
-				1CC38585219BBCAC00F831EF /* AppDelegate.swift */,
-				1CC38587219BBCAC00F831EF /* ViewController.swift */,
-				1CC38589219BBCAC00F831EF /* Main.storyboard */,
+				1CC3859A219BCB4800F831EF /* Application */,
+				1CC3859E219BCCA100F831EF /* Common */,
+				1CC3859C219BCB4800F831EF /* Modules */,
 				1CC3858C219BBCB000F831EF /* Assets.xcassets */,
 				1CC3858E219BBCB000F831EF /* LaunchScreen.storyboard */,
 				1CC38591219BBCB000F831EF /* Info.plist */,
@@ -101,6 +101,46 @@
 			children = (
 			);
 			path = Templates;
+			sourceTree = "<group>";
+		};
+		1CC3859A219BCB4800F831EF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1CC38585219BBCAC00F831EF /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1CC3859C219BCB4800F831EF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1CC3859D219BCB6B00F831EF /* SampleModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1CC3859D219BCB6B00F831EF /* SampleModule */ = {
+			isa = PBXGroup;
+			children = (
+				1CC38587219BBCAC00F831EF /* ViewController.swift */,
+			);
+			path = SampleModule;
+			sourceTree = "<group>";
+		};
+		1CC3859E219BCCA100F831EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1CC38589219BBCAC00F831EF /* Main.storyboard */,
+				1CC3859F219BCCE100F831EF /* Entities */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1CC3859F219BCCE100F831EF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		BFC502F674B30210F146A81B /* Pods */ = {
