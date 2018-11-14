@@ -52,6 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				1CC38584219BBCAC00F831EF /* ios-boilerplate */,
+				1CC38598219BC7A800F831EF /* Support Files */,
+				1CC38597219BC7A300F831EF /* Libraries */,
+				1CC38599219BC7AE00F831EF /* Templates */,
 				1CC38583219BBCAC00F831EF /* Products */,
 				BFC502F674B30210F146A81B /* Pods */,
 				00B4A176EDF874970906DE25 /* Frameworks */,
@@ -77,6 +80,27 @@
 				1CC38591219BBCB000F831EF /* Info.plist */,
 			);
 			path = "ios-boilerplate";
+			sourceTree = "<group>";
+		};
+		1CC38597219BC7A300F831EF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		1CC38598219BC7A800F831EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		1CC38599219BC7AE00F831EF /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Templates;
 			sourceTree = "<group>";
 		};
 		BFC502F674B30210F146A81B /* Pods */ = {
